@@ -1,18 +1,23 @@
 # Healthcare Dataset Analysis
 
-Welcome to my Healthcare Dataset Analysis Portfolio! This project demonstrates my proficiency in SQL for analyzing healthcare data. Below, you'll find the project objectives, key insights, and links to the dataset and code.
+Welcome to my **Healthcare Dataset Analysis Portfolio!** This project demonstrates my proficiency in **SQL** for analyzing healthcare data. Below, you'll find the project objectives, key insights, and links to the dataset and code.
 
-# 🌐 Project Overview
+---
+## 🌐 Project Overview
 
 This project involves analyzing a healthcare dataset to uncover trends, optimize hospital operations, and provide actionable insights. The analysis focuses on patient demographics, common medical conditions, revenue streams, and hospital efficiency.
+---
 
-# 📁 Repository Structure
+---
+## 📁 Repository Structure
 
 |-- healthcare_dataset.csv                # Dataset: Healthcare data
 |-- Healthcare Analysis.sql               # SQL queries for data analysis
 |-- README.md                             # Project documentation (this file)
+---
 
-# 💾 Dataset Details
+---
+## 💾 Dataset Details
 
 **Column Name**
 
@@ -45,8 +50,10 @@ This project involves analyzing a healthcare dataset to uncover trends, optimize
 **Treatment_Cost**
 
 **Total cost of treatment**
+---
 
-**🔍 Key Insights**
+---
+## **🔍 Key Insights**
 
 **1. Most Common Diagnoses**
 
@@ -80,7 +87,8 @@ Smaller hospitals face resource constraints with lower doctor-to-patient ratios.
 
 Larger hospitals are better equipped to manage higher patient volumes.
 
-**🗄️ SQL Analysis**
+---
+## **🗄️ SQL Analysis**
 
 The SQL code used in this project demonstrates the following:
 
@@ -89,9 +97,12 @@ Data Definition: Creating tables to store healthcare data.
 Data Manipulation: Filtering, grouping, and aggregating data to extract insights.
 
 Advanced Techniques: Utilizing joins, window functions, and subqueries for deeper analysis.
+---
 
-**✨ Conclusion**
+---
+## **✨ Conclusion**
 
 This analysis highlights key insights into healthcare operations and patient care. The findings can assist healthcare providers in optimizing resources, enhancing patient outcomes, and improving operational efficiency.
 
 For questions or collaboration, feel free to reach out at ssmujtaba1@gmail.com.
+---
