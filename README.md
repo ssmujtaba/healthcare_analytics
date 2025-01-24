@@ -1,94 +1,86 @@
-Healthcare Dataset Analysis
+# Healthcare Dataset Analysis
 
 Welcome to my Healthcare Dataset Analysis Portfolio! This project demonstrates my proficiency in SQL for analyzing healthcare data. Below, you'll find the project objectives, key insights, and links to the dataset and code.
 
-🌐 Project Overview
+# 🌐 Project Overview
 
 This project involves analyzing a healthcare dataset to uncover trends, optimize hospital operations, and provide actionable insights. The analysis focuses on patient demographics, common medical conditions, revenue streams, and hospital efficiency.
 
-📁 Repository Structure
+# 📁 Repository Structure
 
 |-- healthcare_dataset.csv                # Dataset: Healthcare data
 |-- Healthcare Analysis.sql               # SQL queries for data analysis
 |-- README.md                             # Project documentation (this file)
 
-💾 Dataset Details
+# 💾 Dataset Details
 
-Column Name
+**Column Name**
 
-Description
+**Description**
 
-Patient_ID
+**Age**
 
-Unique identifier for each patient
+**Age of the patient**
 
-Age
+**Gender**
 
-Age of the patient
+**Gender of the patient**
 
-Gender
+**Diagnosis**
 
-Gender of the patient
+**Medical condition diagnosed**
 
-Diagnosis
+**Admission_Date**
 
-Medical condition diagnosed
+**Date of hospital admission**
 
-Admission_Date
+**Discharge_Date**
 
-Date of hospital admission
+**Date of hospital discharge**
 
-Discharge_Date
+**Length_of_Stay**
 
-Date of hospital discharge
+**Total days spent in the hospital**
 
-Length_of_Stay
+**Treatment_Cost**
 
-Total days spent in the hospital
+**Total cost of treatment**
 
-Treatment_Cost
+**🔍 Key Insights**
 
-Total cost of treatment
-
-Doctor_ID
-
-Identifier for the consulting doctor
-
-🔍 Key Insights
-
-1. Most Common Diagnoses
+**1. Most Common Diagnoses**
 
 Chronic illnesses like Diabetes, Hypertension, and Obesity dominate the dataset.
 
 Cancer treatments generate the highest revenue, requiring substantial hospital resources.
 
-2. Patient Demographics
+**2. Patient Demographics**
 
 Middle-aged adults (36-60) form the largest patient group.
 
 Hypertension is more prevalent among older males, while younger patients show lower admission rates.
 
-3. Revenue Analysis
+**3. Revenue Analysis**
 
 Chronic conditions ensure consistent revenue streams.
 
 Cancer treatments yield significantly higher average costs than other conditions.
 
-4. Admission Trends
+**4. Admission Trends**
 
 Hospital admissions have shown steady growth, with occasional peaks likely influenced by external factors like population growth.
 
-5. Average Length of Stay
+**5. Average Length of Stay**
 
 Chronic conditions like Arthritis result in longer hospital stays compared to acute conditions, emphasizing the need for efficient management.
 
-6. Doctor-Patient Ratios
+**6. Doctor-Patient Ratios**
 
 Smaller hospitals face resource constraints with lower doctor-to-patient ratios.
 
 Larger hospitals are better equipped to manage higher patient volumes.
 
-🗄️ SQL Analysis
+**🗄️ SQL Analysis**
 
 The SQL code used in this project demonstrates the following:
 
@@ -98,11 +90,8 @@ Data Manipulation: Filtering, grouping, and aggregating data to extract insights
 
 Advanced Techniques: Utilizing joins, window functions, and subqueries for deeper analysis.
 
-Click here to access the SQL code.
-
-✨ Conclusion
+**✨ Conclusion**
 
 This analysis highlights key insights into healthcare operations and patient care. The findings can assist healthcare providers in optimizing resources, enhancing patient outcomes, and improving operational efficiency.
 
 For questions or collaboration, feel free to reach out at ssmujtaba1@gmail.com.
-
