@@ -11,9 +11,11 @@ This project involves analyzing a healthcare dataset to uncover trends, optimize
 ---
 ## 📁 Repository Structure
 
+```
 |-- healthcare_dataset.csv                # Dataset: Healthcare data
 |-- Healthcare Analysis.sql               # SQL queries for data analysis
 |-- README.md                             # Project documentation (this file)
+```
 ---
 
 ---
