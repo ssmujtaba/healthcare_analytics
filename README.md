@@ -1,6 +1,6 @@
 # Healthcare Dataset Analysis
 
-Welcome to my **Healthcare Dataset Analysis Portfolio!** This project demonstrates my proficiency in **SQL** for analyzing healthcare data. Below, you'll find the project objectives, key insights, and links to the dataset and code.
+Welcome to my **Healthcare Dataset Analysis Portfolio!** This project demonstrates my proficiency in **SQL** and **Python** for analyzing healthcare data. Below, you'll find the project objectives, key insights, and links to the dataset and code.
 
 ---
 
@@ -205,9 +205,167 @@ Advanced Techniques: Utilizing joins, window functions, and subqueries for deepe
 
 ---
 
+## 🐍 Data Analysis with Python
+
+The Python analysis utilizes libraries like Pandas, NumPy, and Matplotlib/Seaborn. It covers:
+
+* 🧹 Exploratory Data Analysis (EDA) and Data Cleaning
+* 📊 Data Visualization
+* 🔧 Feature Engineering
+
+# **1. Exploratory Data Analysis (EDA) and Data Cleaning**
+
+```
+Shape of the dataset: (55500, 15)
+Data types of each column:
+ Name                   object
+Age                     int64
+Gender                 object
+Blood Type             object
+Medical Condition      object
+Date of Admission      object
+Doctor                 object
+Hospital               object
+Insurance Provider     object
+Billing Amount        float64
+Room Number             int64
+Admission Type         object
+Discharge Date         object
+Medication             object
+Test Results           object
+dtype: object
+Descriptive statistics:
+                 Age  Billing Amount   Room Number
+count  55500.000000    55500.000000  55500.000000
+mean      51.539459    25539.316097    301.134829
+std       19.602454    14211.454431    115.243069
+min       13.000000    -2008.492140    101.000000
+25%       35.000000    13241.224652    202.000000
+50%       52.000000    25538.069376    302.000000
+75%       68.000000    37820.508436    401.000000
+max       89.000000    52764.276736    500.000000
+Missing values:
+ Name                  0
+Age                   0
+Gender                0
+Blood Type            0
+Medical Condition     0
+Date of Admission     0
+Doctor                0
+Hospital              0
+Insurance Provider    0
+Billing Amount        0
+Room Number           0
+Admission Type        0
+Discharge Date        0
+Medication            0
+Test Results          0
+dtype: int64
+```
+
+**Insight**
+
+* Interpretation: The dataset has 55,500 rows and 15 columns.
+* Columns like Name, Gender, Medical Condition, etc., are of type Object, while Age and Room Number are of type int64, and Billing Amount is of type float64.
+
+```
+
+| Name          | Age   | Gender   | Blood Type   | Medical Condition   | Date of Admission   | Doctor           | Hospital                   | Insurance Provider   | Billing Amount   | Room Number   | Admission Type   | Discharge Date      | Medication   | Test Results   |
+|:--------------|:------|:---------|:-------------|:--------------------|:--------------------|:-----------------|:---------------------------|:---------------------|:-----------------|:--------------|:-----------------|:--------------------|:-------------|:---------------|
+| Bobby Jackson | 30    | Male     | B-           | Cancer              | 2024-01-31 00:00:00 | Matthew Smith    | Sons and Miller            | Blue Cross           | 18856.3          | 328           | Urgent           | 2024-02-02 00:00:00 | Paracetamol  | Normal         |
+| Leslie Terry  | 62    | Male     | A+           | Obesity             | 2019-08-20 00:00:00 | Samantha Davies  | Kim Inc                    | Medicare             | 33643.3          | 265           | Emergency        | 2019-08-26 00:00:00 | Ibuprofen    | Inconclusive   |
+| Danny Smith   | 76    | Female   | A-           | Obesity             | 2022-09-22 00:00:00 | Tiffany Mitchell | Cook PLC                   | Aetna                | 27955.1          | 205           | Emergency        | 2022-10-07 00:00:00 | Aspirin      | Normal         |
+| Andrew Watts  | 28    | Female   | O+           | Diabetes            | 2020-11-18 00:00:00 | Kevin Wells      | Hernandez Rogers and Vang, | Medicare             | 37909.8          | 450           | Elective         | 2020-12-18 00:00:00 | Ibuprofen    | Abnormal       |
+| Adrienne Bell | 43    | Female   | AB+          | Cancer              | 2022-09-19 00:00:00 | Kathleen Hanna   | White-White                | Aetna                | 14238.3          | 458           | Urgent           | 2022-10-09 00:00:00 | Penicillin   | Abnormal       |
+
+```
+
+**Insight**:
+
+* The Name column is standardized by capitalizing the first letter of each word.
+* The Date of Admission and Discharge Date columns are converted to datetime objects for further analysis and manipulation.
+
+---
+
+# **2. Data Visualization**
+
+![image](https://github.com/user-attachments/assets/439389f2-9176-4d72-8b0f-ad43ef2fc257)
+
+**Insight**:
+
+* The pie chart shows that there are more females (50.0%) than males (50.0%) in the dataset.
+
+---
+
+![image](https://github.com/user-attachments/assets/6e99c2a7-2abc-4e51-bcde-7e69fbf9aecb)
+
+**Insight**
+
+* The bar chart shows that Hypertension, Cancer, and Diabetes are the top 3 medical conditions in the dataset.
+
+---
+
+![image](https://github.com/user-attachments/assets/42d0c587-a5fa-4658-b37f-c6e1cf4bba91)
+
+
+**Insight**
+
+* The pie chart shows that the majority of admissions are Emergency (37.3%), followed by Urgent (33.1%) and Elective (29.6%).
+
+---
+
+![image](https://github.com/user-attachments/assets/08adf01b-9de8-4b65-833e-dd2a21d7da5d)
+
+**Insight**
+
+* The heatmap shows the correlation between numerical variables, with darker shades indicating stronger correlations.
+
+---
+
+# **3. Feature Engineering**
+
+![image](https://github.com/user-attachments/assets/db4b107a-668b-43f0-90b6-bf2b36a31ee2)
+
+**Insight**
+
+* This new feature could be useful for further analysis, such as predicting the billing amount based on the length of stay and other factors.
+
+---
+
+| Medical Condition   | Length of Stay   | Billing Amount   |
+|:--------------------|:-----------------|:-----------------|
+| Asthma              | 15.6966          | 25635.2          |
+| Arthritis           | 15.5174          | 25497.3          |
+| Cancer              | 15.4958          | 25161.8          |
+| Obesity             | 15.4643          | 25806            |
+| Hypertension        | 15.4586          | 25497.1          |
+
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   Medical Condition  6 non-null      object 
+ 1   Length of Stay     6 non-null      float64
+ 2   Billing Amount     6 non-null      float64
+dtypes: float64(2), object(1)
+memory usage: 192.0+ bytes
+None
+
+**Insight**
+
+I've added a new column named Billing Amount Per Day. This column represents the average amount billed per day for each patient. I can then use this new feature to perform further analysis, such as:
+
+* Comparing the billing amount per day across different medical conditions.
+* Analyzing the relationship between billing amount per day and length of stay
+* Identifying patients with unusually high or low billing amounts per day
+
+---
+
+📝 Additional Notes:
+
+* The Python code was developed and executed using Jupyter Notebook on Google Colab.
+* The visualizations generated from the Python analysis are included in the 'Healthcare Analysis.pdf' file.
+
 ## ✨ Conclusion
 
-This analysis highlights key insights into healthcare operations and patient care. The findings can assist healthcare providers in optimizing resources, enhancing patient outcomes, and improving operational efficiency.
-For questions or collaboration, feel free to reach out at **ssmujtaba1@gmail.com**.
+This portfolio demonstrates my ability to leverage both SQL and Python to analyze and visualize healthcare data. 💪 The combination of these powerful tools allows for a comprehensive understanding of patient healthcare utilization, costs, and potential trends. 💡
 
 ---
